@@ -3,7 +3,6 @@ namespace SimpleApi.Models
     public class Student
     {
         public int Id { get; set; }
-        public required string Name { get; set; }
+        public string Name { get; set; } = null!; // prevents warning CS8618
     }
 }
-
